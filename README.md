@@ -34,7 +34,7 @@ The system takes the following parameters to make predictions:
 ### Installation
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Akshaysharma17/student-app.git
 cd student-app
 ```
 
