@@ -40,7 +40,7 @@ cd student-app
 
 2. Install required packages:
 ```bash
-pip install streamlit pandas numpy scikit-learn
+pip install -r requirements.txt
 ```
 
 ### Running the Application
@@ -52,13 +52,26 @@ streamlit run stud-per.py
 2. Open your web browser and navigate to the local URL provided in the terminal (typically http://localhost:8501)
 
 ## Sample Data
-Here are some example inputs and their expected predictions:
+Here are some real examples from the training dataset:
 
-| Hours Studied | Previous Score | Extracurricular | Sleep Hours | Papers Solved | Expected Performance |
-|--------------|----------------|-----------------|-------------|---------------|----------------------|
-| 5            | 75            | Yes            | 7           | 5             | Good                 |
-| 3            | 65            | No             | 6           | 3             | Average              |
-| 8            | 85            | Yes            | 8           | 8             | Excellent            |
+| Hours Studied | Previous Score | Extracurricular | Sleep Hours | Papers Solved | Performance Index |
+|--------------|----------------|-----------------|-------------|---------------|-------------------|
+| 7            | 99            | Yes            | 9           | 1             | 91.0              |
+| 4            | 82            | No             | 4           | 2             | 65.0              |
+| 8            | 51            | Yes            | 7           | 2             | 45.0              |
+| 5            | 52            | Yes            | 5           | 2             | 36.0              |
+| 7            | 75            | No             | 8           | 5             | 66.0              |
+| 3            | 78            | No             | 9           | 6             | 61.0              |
+
+### Performance Index Interpretation
+- 90-100: Excellent
+- 80-89: Very Good
+- 70-79: Good
+- 60-69: Above Average
+- 50-59: Average
+- 40-49: Below Average
+- 30-39: Poor
+- 20-29: Very Poor
 
 ## Model Details
 - The system uses a trained machine learning model stored in `student_lr_final_model.pkl`
